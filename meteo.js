@@ -9,7 +9,7 @@ function showCity() {
     const div = document.createElement("div");
     div.classList.add("city");
     
-    /* document.querySelectorAll(".city").forEach(a=>a.style.display="none"); */
+    document.querySelectorAll(".city").forEach(a=>a.style.display="none");
 
     arrayVilles.forEach(function(i) {
         if(i==codeVille)
@@ -25,17 +25,13 @@ function showCity() {
                     
                     const markup = `
                     <h2>${codeVille}</h2>
-                    
                     <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
                     <figure>
                     <img class="city-icon" src="${icon}" alt="${weather[0]["description"]}">
                     <figcaption>${weather[0]["description"]}</figcaption>
-                    </figure>
-                    `;
+                    </figure>`;
                     div.innerHTML = markup;
                     list.appendChild(div);
-                }
-        )
+        })
     })
-}
 }
