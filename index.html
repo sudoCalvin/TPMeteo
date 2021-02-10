@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Météo de sudoCalvin</title>
+		<link rel="stylesheet" href="meteo.css">
+		<script type="text/javascript" src="meteo.js"></script>
+	</head>
+	<body>
+		<h1>TP MÉTÉO HTML</h1>
+		
+		<label for="ville-select">Choisissez une ville</label>
+		<select name="Villes" id="ville-select" onchange="showCity()">
+			<option value="0">Ville</option>
+			<option value="Lyon">Lyon</option>
+			<option value="Macon">Mâcon</option>
+			<option value="Stockholm">Stockholm</option>
+		</select>	
+		
+		
+		<div class="box">
+		</div>
+
+		<script>
+			document.querySelectorAll(".city").forEach(a=>a.style.display="none");
+		</script>
+		
+		<footer class="footer">
+			<p>Page créée par Manon Tourniaire-Blum</p>
+			<p>Images fournies par 
+				<a href="https://thenounproject.com/linseedstudio/">Linseed Studio</a>, 
+				<a href="https://thenounproject.com/MRFA/">MRFA</a> et 
+				<a href="https://thenounproject.com/mbarki_noura/">Noura Mbarki</a>
+			</p>
+		</footer>
+	</body>
+	
+</html>
